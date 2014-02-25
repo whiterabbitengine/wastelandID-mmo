@@ -1,3 +1,7 @@
+<?php
+function proCheck() { return TRUE; }
+include("path.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,28 +9,24 @@
 <link href="css/main-style-1.css" rel="stylesheet" type="text/localization/english_US/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
 <!-- STYLES END ---->
+<script>
+var isoViewerWidth=(window.innerWidth)*0.98;
+var isoViewerHeight=(window.innerHeight)*0.98;
+
+</script>
 <script src="JSAssets/jquery.min.js"></script>
 <script src="JSAssets/fancywebsocket.js"></script>
 <script src="JSAssets/wastelandID.js/Canvas2D.js"></script>
-<script src="JSAssets/wastelandID.js/isoGroundTiles.js"></script>
-<script src="JSAssets/wastelandID.js/isoComFetchData.js"></script>
 <script src="JSAssets/DHTML/mainDHTML.js"></script>
+<script>
+window.addEventListener('resize', resizeCanvas, false);
+resizeViewer();
+</script>
 </head>
 <body>
 
-<canvas id="myCanvas" width="200" height="100" style="background-color: #000; position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto;">
-Your browser does not support the HTML5 canvas tag.
-</canvas>
+<div id="myCanvas" width="200" height="100" style="background-color: #000; position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto;"></div>
 
-<script>
-
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-
-window.addEventListener('resize', resizeCanvas, false);
-resizeCanvas();
-
-</script>
 <div class="dhtmlContainer" id="dhtmlContainer">
 <div id="DHTMLtoolbar" class="DHTMLtoolbar" style="z-index: 3; background-color: #313f49; position: fixed; padding:4px; width:100%; bottom: 0px; visibility: visible;">
 <input type="image" src="media/textures/5050t.png" style="background-image: url('media/textures/icons.png'); background-position: -2.25px 291.75px; width: 48px; height: 48px; vertical-align: middle;" id="web" class="web" />
