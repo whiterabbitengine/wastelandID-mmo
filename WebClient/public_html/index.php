@@ -8,6 +8,8 @@
 <script src="JSAssets/jquery.min.js"></script>
 <script src="JSAssets/fancywebsocket.js"></script>
 <script src="JSAssets/wastelandID.js/Canvas2D.js"></script>
+<script src="JSAssets/wastelandID.js/isoGroundTiles.js"></script>
+<script src="JSAssets/wastelandID.js/isoComFetchData.js"></script>
 <script src="JSAssets/DHTML/mainDHTML.js"></script>
 </head>
 <body>
